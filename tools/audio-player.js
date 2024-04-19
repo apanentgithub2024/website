@@ -30,8 +30,8 @@ function addConnections(audioId) {
 
 addButton.onclick = function() {
 	const clone = audioPlaceholder.cloneNode(true)
-	clone.getElementById("audio_file" + audio_number).id = "audio_file" + String(audio_number + 1)
-	clone.getElementById("audio_url" + audio_number).id = "audio_url" + String(audio_number + 1)
+	clone.querySelector("#audio_file" + audio_number).id = "audio_file" + String(audio_number + 1)
+	clone.querySelector("#audio_url" + audio_number).id = "audio_url" + String(audio_number + 1)
 	clone.id = "audio" + String(audio_number + 1)
 	document.body.appendChild(clone)
 	audio_number += 1
