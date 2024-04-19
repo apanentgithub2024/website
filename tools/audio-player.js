@@ -1,5 +1,4 @@
-setTimeout(function() {
-	const audioPlaceholder = document.getElementById("audio1").cloneNode(true)
+const audioPlaceholder = document.getElementById("audio1").cloneNode(true)
 const addButton = document.createElement("button")
 
 let audio_number = 1
@@ -42,4 +41,3 @@ addButton.onclick = function() {
 }
 
 addConnections("1")
-}, 200)
