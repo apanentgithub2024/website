@@ -22,9 +22,9 @@ function getCookie(cname) {
 
 document.getElementById("get").onclick = function() {
 	setCookie("canRedirect", "true", 30)
-	window.location.href = "/home.html"
+	window.location.href = "home.html"
 }
 
 if (getCookie("canRedirect") == "true") {
-	window.location.href = "/home.html"
+	window.location.href = /home.html"
 }
